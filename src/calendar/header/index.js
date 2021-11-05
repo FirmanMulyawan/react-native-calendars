@@ -229,8 +229,15 @@ class CalendarHeader extends Component {
             {this.renderHeader()}
             {this.renderIndicator()}
           </View>
-          {this.renderArrow('left')}
-          {this.renderArrow('right')}
+          <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}>
+            {this.renderArrow('left')}
+            {this.renderArrow('right')}
+          </View>
         </View>
         {this.renderDayNames()}
       </View>
