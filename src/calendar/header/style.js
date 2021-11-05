@@ -58,6 +58,22 @@ export default function (theme = {}) {
     disabledDayHeader: {
       color: appStyle.textSectionTitleDisabledColor
     },
+    wrapperBtn: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center'
+    },
+    wrapperToday: {
+      backgroundColor: appStyle.textSectionTitleColor, 
+      padding: 5, 
+      borderRadius: 6
+    }, 
+    today: {
+      color: appStyle.textSectionTitleColor, 
+    }, 
+    space: {
+      width: 15, 
+    }, 
     ...(theme[STYLESHEET_ID] || {})
   });
 }
