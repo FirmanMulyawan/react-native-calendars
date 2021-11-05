@@ -164,6 +164,7 @@ class CalendarHeader extends Component {
 
     return (
       <TouchableOpacity
+        activeOpacity={1}
         onPress={!shouldDisable ? onPress : undefined}
         disabled={shouldDisable}
         style={this.style.arrow}
