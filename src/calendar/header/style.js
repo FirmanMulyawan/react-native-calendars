@@ -41,7 +41,7 @@ export default function (theme = {}) {
       tintColor: appStyle.disabledArrowColor
     },
     week: {
-      marginTop: 7,
+      marginTop: 15,
       flexDirection: 'row',
       justifyContent: 'space-around'
     },
