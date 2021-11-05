@@ -32,8 +32,6 @@ export default function getStyle(theme = {}) {
       right: 0,
       top: 0,
       backgroundColor: appStyle.calendarBackground,
-      paddingLeft: 15,
-      paddingRight: 15
     },
     ...(theme[STYLESHEET_ID] || {})
   });
