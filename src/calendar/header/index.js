@@ -230,12 +230,13 @@ class CalendarHeader extends Component {
             {this.renderIndicator()}
           </View>
           <View
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-          }}>
+          style={this.style.wrapperBtn}>
+            <View style={this.style.wrapperToday}>
+              <Text style={this.style.today}>Today</Text>
+            </View>
+            <View style={this.style.space} />
             {this.renderArrow('left')}
+            <View style={this.style.space} />
             {this.renderArrow('right')}
           </View>
         </View>
