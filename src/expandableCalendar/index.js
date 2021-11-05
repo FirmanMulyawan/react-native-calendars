@@ -533,7 +533,6 @@ class ExpandableCalendar extends Component {
               staticHeader
             />
             {horizontal && this.renderWeekCalendar()}
-//             {!hideKnob && this.renderKnob()}
             {!horizontal && this.renderHeader()}
           </Animated.View>
         )}
