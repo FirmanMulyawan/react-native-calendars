@@ -108,8 +108,6 @@ export default function styleConstructor(theme = {}) {
     week: {
       marginTop: 7,
       marginBottom: 7,
-      paddingRight: 15,
-      paddingLeft: 15,
       flexDirection: 'row',
       justifyContent: 'space-around'
     },
