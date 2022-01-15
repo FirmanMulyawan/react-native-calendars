@@ -26,6 +26,7 @@ class CalendarList extends Component {
 
   static propTypes = {
     ...Calendar.propTypes,
+    handleToday: PropTypes.func,
     /** Max amount of months allowed to scroll to the past. Default = 50 */
     pastScrollRange: PropTypes.number,
     /** Max amount of months allowed to scroll to the future. Default = 50 */
@@ -259,7 +260,7 @@ class CalendarList extends Component {
   };
 
   renderStaticHeader() {
-    const {staticHeader, horizontal, headerStyle} = this.props;
+    const {staticHeader, horizontal, headerStyle, handleToday} = this.props;
     const useStaticHeader = staticHeader && horizontal;
     const headerProps = extractComponentProps(CalendarHeader, this.props);
 
@@ -267,6 +268,7 @@ class CalendarList extends Component {
       return (
         <CalendarHeader
           {...headerProps}
+          handleToday={handleToday}
           testID={STATIC_HEADER}
           style={[this.style.staticHeader, headerStyle]}
           month={this.state.currentMonth}
