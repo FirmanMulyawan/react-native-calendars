@@ -276,6 +276,7 @@ class Calendar extends Component {
       ...headerProps,
       testID: testID,
       style: headerStyle,
+      handleToday: this.props.handleToday,
       ref: c => (this.header = c),
       month: this.state.currentMonth,
       addMonth: this.addMonth,
