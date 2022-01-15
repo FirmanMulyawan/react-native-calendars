@@ -208,7 +208,7 @@ class CalendarHeader extends Component {
   }
 
   render() {
-    const {style, testID} = this.props;
+    const {style, testID, handleToday} = this.props;
 
     return (
       <View
@@ -231,9 +231,12 @@ class CalendarHeader extends Component {
           </View>
           <View
           style={this.style.wrapperBtn}>
-            <View style={this.style.wrapperToday}>
+            <TouchableOpacity
+              activeOpacity={1}
+              style={this.style.wrapperToday}
+              onPress={() => handleToday()}>
               <Text style={this.style.today}>Today</Text>
-            </View>
+            </TouchableOpacity>
             <View style={this.style.space} />
             {this.renderArrow('left')}
             <View style={this.style.space} />
