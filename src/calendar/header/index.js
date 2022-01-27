@@ -44,6 +44,7 @@ class CalendarHeader extends Component {
     disabledDaysIndexes: PropTypes.arrayOf(PropTypes.number),
     /** Replace default month and year title with custom one. the function receive a date as parameter. */
     renderHeader: PropTypes.any,
+    textHeader: PropTypes.any,
     /** Provide aria-level for calendar heading for proper accessibility when used with web (react-native-web) */
     webAriaLevel: PropTypes.number
   };
@@ -128,7 +129,7 @@ class CalendarHeader extends Component {
   };
 
   renderHeader = () => {
-    const {renderHeader, month, monthFormat, testID, webAriaLevel} = this.props;
+    const {renderHeader, month, monthFormat, testID, webAriaLevel, textHeader} = this.props;
     const webProps = Platform.OS === 'web' ? {'aria-level': webAriaLevel} : {};
 
     if (renderHeader) {
@@ -143,7 +144,8 @@ class CalendarHeader extends Component {
           testID={testID ? `${HEADER_MONTH_NAME}-${testID}` : HEADER_MONTH_NAME}
           {...webProps}
         >
-          {month.toString(monthFormat)}
+//           {month.toString(monthFormat)}
+          {textHeader}
         </Text>
       </Fragment>
     );
