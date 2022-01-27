@@ -44,7 +44,7 @@ class CalendarHeader extends Component {
     disabledDaysIndexes: PropTypes.arrayOf(PropTypes.number),
     /** Replace default month and year title with custom one. the function receive a date as parameter. */
     renderHeader: PropTypes.any,
-    textHeader: PropTypes.any,
+    textHeader: PropTypes.string,
     /** Provide aria-level for calendar heading for proper accessibility when used with web (react-native-web) */
     webAriaLevel: PropTypes.number
   };
