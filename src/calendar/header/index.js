@@ -144,7 +144,7 @@ class CalendarHeader extends Component {
           testID={testID ? `${HEADER_MONTH_NAME}-${testID}` : HEADER_MONTH_NAME}
           {...webProps}
         >
-//           {month.toString(monthFormat)}
+          {/* {month.toString(monthFormat)} */}
           {textHeader}
         </Text>
       </Fragment>
