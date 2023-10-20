@@ -250,7 +250,7 @@ class WeekCalendar extends Component {
           horizontal
           showsHorizontalScrollIndicator={false}
           pagingEnabled
-          scrollEnabled
+          scrollEnabled={false}
           renderItem={this.renderItem}
           keyExtractor={this.keyExtractor}
           initialScrollIndex={NUMBER_OF_PAGES}
